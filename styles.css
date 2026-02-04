@@ -243,7 +243,6 @@ ol {
 a:link, a:visited {
   color: #0000FF; /* Blue color */
   text-decoration: underline; /* Ensures the link is underlined */
-  font-weight: bold; /* Makes the text bold */
 }
 
 footer {
