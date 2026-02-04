@@ -238,12 +238,6 @@ ol {
     font-size: 1.05rem;
 }
 
-.number-list li::before {
-    position: absolute;
-    left: 0;
-    color: var(--accent-color);
-}
-
 
 
 a:link, a:visited {
