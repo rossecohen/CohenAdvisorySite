@@ -61,12 +61,6 @@ p {
     font-size: 1.05rem;
 }
 
-a:link, a:visited {
-  color: #0000FF; /* Blue color */
-  text-decoration: underline; /* Ensures the link is underlined */
-  font-weight: bold; /* Makes the text bold */
-}
-
 ul {
     list-style: none;
 }
