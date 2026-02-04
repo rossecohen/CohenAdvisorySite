@@ -206,6 +206,12 @@ ol {
     margin-bottom: 1.5rem;
 }
 
+.content-block a:link, a:visited {
+  color: #0000FF; /* Blue color */
+  text-decoration: underline; /* Ensures the link is underlined */
+}
+
+
 .bullet-list {
     margin-top: 1.5rem;
 }
@@ -245,10 +251,6 @@ ol {
 }
 
 
-a:link, a:visited {
-  color: #0000FF; /* Blue color */
-  text-decoration: underline; /* Ensures the link is underlined */
-}
 
 footer {
     padding: 2rem 0;
