@@ -220,6 +220,12 @@ ul {
 }
 
 
+a:link, a:visited {
+  color: #0000FF; /* Blue color */
+  text-decoration: underline; /* Ensures the link is underlined */
+  font-weight: bold; /* Makes the text bold */
+}
+
 footer {
     padding: 2rem 0;
     background-color: var(--bg-white);
