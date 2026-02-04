@@ -138,6 +138,7 @@ ul {
     font-weight: 500;
     color: var(--text-muted);
     transition: color 0.2s;
+    text-decoration: none;
 }
 
 .nav-list a:hover {
