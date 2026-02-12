@@ -226,3 +226,27 @@ footer {
     padding: 2rem 0;
     background-color: var(--bg-white);
 }
+
+/* -------------------------------------------------------------------
+   CUSTOM ELEMENTS
+------------------------------------------------------------------- */
+.numbered-list {
+    list-style: decimal;
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+    color: var(--text-muted);
+}
+
+.numbered-list li {
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+    padding-left: 0.5rem;
+}
+
+blockquote {
+    margin: 1.5rem 3rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
