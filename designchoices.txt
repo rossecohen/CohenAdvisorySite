@@ -1,0 +1,42 @@
+Typography
+Headings: Libre Baskerville (Bold)
+
+Classic editorial serif
+Conveys authority and trust
+Pairs well with Inter for a modern/traditional contrast
+Google Fonts: font-family: 'Libre Baskerville', serif;
+
+Body Text: Inter (Regular/Medium)
+
+Clean, modern sans-serif for readability
+Weight: 400 (regular) for body, 500 (medium) for emphasis
+Size: 18px body / 32-36px H2 / 48-56px H1
+
+Color Scheme
+Primary (Brand/CTA): #0A5C4F (Deep Teal)
+
+Evokes growth and financial stability
+More distinctive than navy blue (which every financial service uses)
+Professional but not corporate-boring
+Works well for buttons, links, key metrics
+
+Secondary (Accent): #E8754A (Burnt Orange)
+
+Use sparingly for data highlights and "warning" signals
+Good for the "Common signals" section
+Adds warmth without being unprofessional
+
+Neutrals:
+
+Text: #1A1A1A (Almost black—softer than pure black)
+Subheadings/secondary text: #4A4A4A (Medium gray)
+Background: #FFFFFF (White)
+Alternate section background: #F7F9FB (Very light blue-gray)
+Borders/dividers: #E5E5E5 (Light gray)
+
+Usage Guidelines:
+
+Primary teal: All CTAs, section headers, key stats (like "30% reduction")
+Burnt orange: Problem indicators, urgent signals, data points needing attention
+Keep 80% of the page neutral grays and white
+Use color strategically—not everywhere
