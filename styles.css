@@ -335,6 +335,23 @@ ul {
     line-height: 1.5;
 }
 
+.pillars-summary {
+    margin-top: 1.5rem;
+    padding: 1.25rem 1.75rem;
+    background: rgba(10, 92, 79, 0.1);
+    border-left: 3px solid var(--accent-color);
+    border-radius: var(--radius);
+    max-width: 100%;
+}
+
+.pillars-summary p {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-main);
+    line-height: 1.7;
+    margin: 0;
+}
+
 @media (max-width: 768px) {
     .pillars-grid {
         flex-direction: column;
@@ -682,38 +699,18 @@ ul {
     max-width: calc(50% - 0.5rem);
 }
 
-.signal-critical {
-    border-left-color: #D64545;
-}
-
-.signal-warning {
+.signal-branded {
     border-left-color: var(--accent-secondary);
-}
-
-.signal-caution {
-    border-left-color: #D4A843;
 }
 
 .signal-checkbox {
     flex-shrink: 0;
     width: 20px;
     height: 20px;
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--accent-secondary);
     border-radius: 4px;
     margin-top: 0.15rem;
     position: relative;
-}
-
-.signal-critical .signal-checkbox {
-    border-color: #D64545;
-}
-
-.signal-warning .signal-checkbox {
-    border-color: var(--accent-secondary);
-}
-
-.signal-caution .signal-checkbox {
-    border-color: #D4A843;
 }
 
 .signal-text {
@@ -1018,7 +1015,15 @@ ul {
     .who-i-am-layout {
         flex-direction: column-reverse;
         align-items: center;
-        text-align: center;
+    }
+
+    .who-i-am-layout .content-block {
+        text-align: left;
+    }
+
+    .who-i-am-photo {
+        margin-top: 0;
+        margin-bottom: 1rem;
     }
 
     .profile-img {
