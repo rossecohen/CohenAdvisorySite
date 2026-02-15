@@ -743,8 +743,9 @@ ul {
     display: flex;
     height: 6px;
     border-radius: 3px;
-    overflow: hidden;
+    overflow: visible;
     margin-bottom: 0;
+    margin-right: 12px;
 }
 
 .timeline-track-segment {
@@ -752,19 +753,32 @@ ul {
     background: var(--accent-color);
 }
 
-/* Proportional widths: steps 1 & 2 short, step 3 long */
+/* Equal widths with increasing opacity */
 .timeline-track-segment:nth-child(1) {
-    width: 15%;
+    width: 33.33%;
     opacity: 0.3;
 }
 .timeline-track-segment:nth-child(2) {
-    width: 15%;
+    width: 33.33%;
     opacity: 0.5;
 }
 .timeline-track-segment:nth-child(3) {
-    width: 70%;
+    width: 33.33%;
     opacity: 1;
     border-radius: 0 3px 3px 0;
+    position: relative;
+}
+.timeline-track-segment:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 10px solid var(--accent-color);
 }
 
 /* Gaps between segments */
@@ -787,15 +801,15 @@ ul {
 
 /* Match track proportions */
 .timeline-step:nth-child(1) {
-    width: 15%;
+    width: 33.33%;
     min-width: 160px;
 }
 .timeline-step:nth-child(2) {
-    width: 15%;
+    width: 33.33%;
     min-width: 160px;
 }
 .timeline-step:nth-child(3) {
-    width: 70%;
+    width: 33.33%;
     flex: 1;
 }
 
