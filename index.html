@@ -33,8 +33,8 @@
         <div class="container">
             <p class="hero-tagline">Insurance Distribution &bull; Wealth Management &bull; Regulated Industries</p>
             <h1 class="hero-headline">
-                Revenue Productivity for Distributed Sales Forces
-                <span class="hero-headline-sub">Making your agents and advisors systematically more productive</span>
+Revenue Productivity for Distributed Sales Forces                
+<span class="hero-headline-sub">I build the systems that make your agents and advisors measurably more effective</span>
             </h1>
             <div class="hero-cta-row">
                 <a href="https://calendar.app.google/HQ8vqJX4E622rzgx5" class="btn btn-primary btn-hero" target="_blank">
@@ -119,7 +119,9 @@
         <div class="container">
             <div class="content-block">
                 <h2>When to call me</h2>
-                <p>In most markets, your competitors are hungry to grow, too. So, if you're standing still you're likely falling behind. Reach out if you're investing in growth and not seeing the results you expect. If something feels off, even if the executive-level reporting looks fine.</p>
+
+<p>Every organization I work with is different, but the underlying problems tend to show up in predictable ways. Reach out if any of these sound familiar.</p>
+
                 <p><strong>Common signals:</strong></p>
             </div>
             <div class="signals-grid">
@@ -220,7 +222,7 @@
                         </svg>
                     </span>
                     <h3 class="principle-title">Meet you where you are</h3>
-                    <p class="principle-desc">I work across the full spectrum, from founder-led to Fortune 500s, and adapt my approach to your maturity level, designing improvements that fit your reality.</p>
+                    <p class="principle-desc">Whether you're a founder-led IMO or a large carrier, I adapt my approach to your environment, your constraints, and what you actually need, not a generic framework.</p>
                 </div>
                 <div class="principle-card">
                     <span class="principle-icon">
@@ -253,9 +255,9 @@
             <div class="who-i-am-layout">
                 <div class="content-block">
                     <h2>Who I am</h2>
-<p>I'm Ross Cohen. I spent nearly a decade as COO of Field Productivity at New York Life, where I built the digital selling platform, CRM, and AI coaching infrastructure for a 12,000-person national field organization. Before that I owned customer acquisition P&L at a home services company through a period of 2x growth to over $100M, and ran P&L for multiple credit card businesses at Capital One. I've also built and exited two consumer businesses.</p>
+<p>I'm Ross Cohen. What I bring to this work is a combination of things that rarely sit in the same person: deep familiarity with how insurance and financial services distribution actually works, the analytical rigor to diagnose what's broken and size the opportunity, and the operating experience to build systems that work in complex, regulated environments with people who have real independence.</p> 
 
-<p>What I bring to this work is a combination of things that rarely sit in the same person: deep familiarity with how insurance and financial services distribution actually works, the analytical rigor to diagnose what's broken and size the opportunity, and the operating experience to build systems that work in complex, regulated environments with people who have real independence. Wharton MBA, Harvard JD.</p>
+<p>I spent nearly a decade as COO of Field Productivity at New York Life, where I built the digital selling platform, CRM, and AI coaching infrastructure for a 12,000-person national field organization. Before that I owned customer acquisition P&L at a home services company through a period of 2x growth to over $100M, and ran P&L for multiple credit card businesses at Capital One. I've also built and exited two consumer businesses. Wharton MBA, Harvard JD.</p>
 
                     <a href="https://calendar.app.google/HQ8vqJX4E622rzgx5" class="btn btn-primary btn-hero" target="_blank">
                         <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -304,57 +306,6 @@
     </div>
 </div>
 
-<script>
-(function () {
-    const slides = document.querySelectorAll('.carousel-slide');
-    const tabs = document.querySelectorAll('.carousel-tab');
-    const dots = document.querySelectorAll('.carousel-dot');
-    const prevBtn = document.querySelector('.carousel-prev');
-    const nextBtn = document.querySelector('.carousel-next');
-    let current = 0;
-    const total = slides.length;
-
-    function goTo(index) {
-        if (index < 0) index = total - 1;
-        if (index >= total) index = 0;
-        slides[current].classList.remove('active');
-        tabs[current].classList.remove('active');
-        tabs[current].setAttribute('aria-selected', 'false');
-        dots[current].classList.remove('active');
-        current = index;
-        slides[current].classList.add('active');
-        tabs[current].classList.add('active');
-        tabs[current].setAttribute('aria-selected', 'true');
-        dots[current].classList.add('active');
-    }
-
-    prevBtn.addEventListener('click', function () { goTo(current - 1); });
-    nextBtn.addEventListener('click', function () { goTo(current + 1); });
-
-    tabs.forEach(function (tab) {
-        tab.addEventListener('click', function () { goTo(parseInt(this.dataset.index)); });
-    });
-
-    dots.forEach(function (dot) {
-        dot.addEventListener('click', function () { goTo(parseInt(this.dataset.index)); });
-    });
-
-    // Keyboard navigation
-    document.querySelector('.carousel').addEventListener('keydown', function (e) {
-        if (e.key === 'ArrowLeft') { goTo(current - 1); e.preventDefault(); }
-        if (e.key === 'ArrowRight') { goTo(current + 1); e.preventDefault(); }
-    });
-
-    // Touch swipe support
-    var startX = 0;
-    var viewport = document.querySelector('.carousel-viewport');
-    viewport.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
-    viewport.addEventListener('touchend', function (e) {
-        var diff = startX - e.changedTouches[0].clientX;
-        if (Math.abs(diff) > 50) { goTo(current + (diff > 0 ? 1 : -1)); }
-    });
-})();
-</script>
 
 </body>
 </html>
