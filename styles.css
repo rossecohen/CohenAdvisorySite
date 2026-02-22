@@ -316,9 +316,9 @@ ul {
 }
 
 .pillar-icon {
-    width: 125%;
-    height: 125%;
-    margin: -12.5% 0 0 -12.5%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
     object-fit: contain;
     display: block;
 }
