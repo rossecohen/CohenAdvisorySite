@@ -263,7 +263,7 @@ ul {
 .hero-dark .hero-headline {
     color: #ffffff;
     font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-    max-width: 780px;
+    max-width: 860px;
     line-height: 1.3;
     margin-bottom: 1.25rem;
 }
@@ -271,7 +271,7 @@ ul {
 .hero-dark .hero-subhead {
     color: rgba(255, 255, 255, 0.8);
     font-size: 1.1rem;
-    max-width: 520px;
+    max-width: 760px;
     line-height: 1.65;
     margin-bottom: 2rem;
 }
@@ -386,7 +386,7 @@ ul {
 /* False alternatives two-column layout */
 .false-alternatives {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 1.25rem;
 }
@@ -497,77 +497,43 @@ ul {
 }
 
 /* -------------------------------------------------------------------
-   ACCORDION (Who I Work With)
+   SITUATION TRIGGER BLOCKS (Who I Work With)
 ------------------------------------------------------------------- */
-.accordion {
+.situation-trigger-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     margin: 2rem 0;
-    border-top: 1px solid var(--border-color);
 }
 
-.accordion-item {
-    border-bottom: 1px solid var(--border-color);
+.situation-trigger-block {
+    border-top: 3px solid var(--accent-color);
+    padding-top: 1.5rem;
 }
 
-.accordion-trigger {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1.5rem 0;
-    background: none;
-    border: none;
-    cursor: pointer;
-    text-align: left;
-    font-family: var(--font-body);
-    transition: color 0.2s;
-}
-
-.accordion-trigger:hover .accordion-title {
-    color: var(--accent-color);
-}
-
-.accordion-num {
+.trigger-block-num {
+    display: block;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     color: var(--accent-color);
     font-family: var(--font-body);
-    flex-shrink: 0;
+    margin-bottom: 0.75rem;
 }
 
-.accordion-title {
+.trigger-block-title {
     font-family: var(--font-heading);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--text-main);
-    flex: 1;
-    transition: color 0.2s;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
 }
 
-.accordion-icon {
-    font-size: 1.5rem;
-    color: var(--accent-color);
-    flex-shrink: 0;
-    transition: transform 0.3s ease;
-    line-height: 1;
-}
-
-.accordion-item.open .accordion-icon {
-    transform: rotate(45deg);
-}
-
-.accordion-body {
-    display: none;
-    padding: 0 0 1.5rem 2.5rem;
-}
-
-.accordion-item.open .accordion-body {
-    display: block;
-}
-
-.accordion-body p {
-    margin-bottom: 0;
-    font-size: 1.05rem;
+@media (max-width: 768px) {
+    .situation-trigger-blocks {
+        grid-template-columns: 1fr;
+    }
 }
 
 .who-i-help-footer {
