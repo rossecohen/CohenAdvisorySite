@@ -703,6 +703,9 @@ ul {
     gap: 3rem;
     padding: 2.5rem;
     min-height: 400px;
+    background: #ffffff;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
 }
 
 .case-study-meta {
@@ -983,6 +986,208 @@ footer {
 
 .cta-email:hover {
     color: #ffffff;
+}
+
+/* -------------------------------------------------------------------
+   WHERE TO START SECTION
+------------------------------------------------------------------- */
+
+.where-to-start-intro {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+
+.engagement-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .engagement-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.engagement-card {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+.engagement-card-header {
+    padding: 2rem 2rem 1.5rem;
+    border-bottom: 1px solid var(--border-soft);
+    background: rgba(44, 10, 113, 0.03);
+}
+
+.engagement-num {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--accent-color);
+    margin-bottom: 0.75rem;
+    font-family: var(--font-body);
+}
+
+.engagement-title {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.engagement-descriptor {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--text-muted);
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.engagement-card-body {
+    padding: 1.75rem 2rem;
+    flex: 1;
+}
+
+.engagement-card-body p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.engagement-deliverables {
+    margin-top: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    background: rgba(44, 10, 113, 0.04);
+    border-radius: var(--radius);
+    border: 1px solid rgba(44, 10, 113, 0.1);
+}
+
+.engagement-deliverables-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 0.75rem;
+    font-family: var(--font-body);
+}
+
+.engagement-deliverable-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.engagement-deliverable-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.engagement-deliverable-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-size: 0.75rem;
+    top: 0.15rem;
+}
+
+.engagement-deliverable-list li:last-child {
+    margin-bottom: 0;
+}
+
+.engagement-card-footer {
+    padding: 1.5rem 2rem;
+    border-top: 1px solid var(--border-soft);
+    background: rgba(44, 10, 113, 0.03);
+}
+
+.engagement-pricing {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+}
+
+.engagement-cta {
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: opacity 0.2s;
+    font-family: var(--font-body);
+}
+
+.engagement-cta:hover {
+    opacity: 0.7;
+}
+
+/* Shared block below engagement cards */
+.engagement-shared {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    background: #ffffff;
+}
+
+.engagement-shared .engagement-deliverables {
+    padding: 2rem;
+    margin-top: 0;
+    border-bottom: 1px solid var(--border-soft);
+    background: rgba(44, 10, 113, 0.03);
+    border-radius: 0;
+    border: none;
+}
+
+.engagement-shared-footer {
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.engagement-shared-footer .engagement-pricing {
+    margin-bottom: 0;
+}
+
+.where-to-start-closer {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+}
+
+.where-to-start-cta-link {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.where-to-start-cta-link:hover {
+    opacity: 0.7;
 }
 
 /* -------------------------------------------------------------------
