@@ -354,6 +354,14 @@ ul {
     max-width: 800px;
 }
 
+.situation-bridge {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    font-family: var(--font-heading);
+    margin-bottom: 0.75rem;
+}
+
 .situation-closer {
     font-size: 1.2rem;
     font-weight: 600;
