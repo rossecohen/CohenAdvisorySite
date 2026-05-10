@@ -997,6 +997,49 @@ footer {
 }
 
 /* -------------------------------------------------------------------
+   PROOF POINTS SECTION
+------------------------------------------------------------------- */
+
+.proof-points-label {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+.proof-points-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.proof-point {
+    padding: 2rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    border-top: 3px solid var(--accent-color);
+}
+
+.proof-stat {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .proof-points-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* -------------------------------------------------------------------
    WHERE TO START SECTION
 ------------------------------------------------------------------- */
 
@@ -1166,6 +1209,13 @@ footer {
     background: rgba(44, 10, 113, 0.03);
     border-radius: 0;
     border: none;
+}
+
+.engagement-shared .engagement-deliverables p {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+    margin-bottom: 0;
 }
 
 .engagement-shared-footer {
