@@ -3,15 +3,15 @@
    ============================================================ */
 
 :root {
-    --color-bg:          #F5F3EE;
-    --color-bg-alt:      #ECEAE4;
-    --color-bg-dark:     #1C2B35;
-    --color-text:        #1A2028;
-    --color-text-muted:  #6B7280;
-    --color-accent:      #1B4D3E;
-    --color-accent-mid:  #256D56;
-    --color-border:      #D8D5CE;
-    --color-border-soft: #E2DFD8;
+    --color-bg:          #FFFFFF;
+    --color-bg-alt:      #F7F9FB;
+    --color-bg-dark:     #1a0542;
+    --color-text:        #1A1A1A;
+    --color-text-muted:  #4A4A4A;
+    --color-accent:      #2c0a71;
+    --color-accent-mid:  #7B4FBF;
+    --color-border:      #E5E5E5;
+    --color-border-soft: #F0F0F0;
 
     --font-display: 'Lora', Georgia, serif;
     --font-body:    'DM Sans', system-ui, sans-serif;
@@ -72,7 +72,7 @@ img {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(245, 243, 238, 0.96);
+    background: rgba(255, 255, 255, 0.96);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--color-border);
@@ -184,7 +184,7 @@ img {
 }
 
 .section-label {
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
