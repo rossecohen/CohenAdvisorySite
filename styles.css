@@ -541,6 +541,17 @@ img {
     color: var(--color-text-muted);
 }
 
+.step-desc a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color var(--transition);
+}
+
+.step-desc a:hover {
+    color: var(--color-accent-mid);
+}
+
 @media (max-width: 768px) {
     .how-i-work-layout {
         grid-template-columns: 1fr;
