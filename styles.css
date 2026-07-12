@@ -227,6 +227,10 @@ img {
     align-items: center;
 }
 
+.hero .container {
+    width: 100%;
+}
+
 .hero-content {
     max-width: 100%;
 }
