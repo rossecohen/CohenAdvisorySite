@@ -258,7 +258,7 @@ img {
     color: var(--color-text);
     margin-bottom: 1.75rem;
     letter-spacing: -0.01em;
-    max-width: 100%;
+    max-width: 900px;
 }
 
 .hero-credential {
@@ -384,6 +384,7 @@ img {
 .results-list {
     display: flex;
     flex-direction: column;
+    max-width: 960px;
 }
 
 .result-card {
